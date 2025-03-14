@@ -6,7 +6,7 @@ interface ReadmeViewerProps {
 
 const ReadmeViewer: React.FC<ReadmeViewerProps> = ({ content }) => {
   return (
-    <div className="prose max-w-full p-4 border rounded bg-gray-900 text-white shadow overflow-auto max-h-[500px]">
+    <div className="prose max-w-full p-4 border rounded bg-gray-900 text-white shadow overflow-x-auto">
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );
